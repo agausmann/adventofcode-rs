@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 aoc = { path = "../libaoc" }
+md-5 = "0.10"
