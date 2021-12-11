@@ -14,8 +14,8 @@ fn main() {
                 acc += k;
                 acc
             })
-            .take_while(|&k| k >= 0)
-            .count()
+            .position(|k| k < 0)
+            .unwrap()
             + 1;
         println!("{}", x);
     }
